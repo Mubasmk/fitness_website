@@ -62,3 +62,26 @@ header{
     width: 100%;
     height: 100vh;
 }
+.menu-section img{
+    opacity: 0.3;
+}
+.menu-section h3{
+    position: relative;
+    bottom: 179px;
+    left: 40px;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.menu-section p{
+    position: relative;
+    bottom: 168px;
+    font-size: 18px;
+    color: white;
+    opacity: 0.8;
+    left: 40px;
+}
+    
+    
+    
