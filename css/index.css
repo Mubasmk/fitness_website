@@ -6,9 +6,11 @@ body{
     padding: 0;
     margin: 0;
     background-color:black;
-    font-family: 'Fira Sans', sans-serif;
-    
+    font-family: 'Fira Sans', sans-serif;  
 }
+
+
+
 /* header section */
 header{
     margin-top: -34px;
@@ -19,9 +21,6 @@ header{
     position: relative;
     top: 21px;
 }
-
-
-
 /* input box */
 .navbar-collapse form input{
     border-radius: 10px;
@@ -44,20 +43,23 @@ header{
     height: 100px;
     filter: invert(100%);
 }
-
 .navbar-brand{
     font-size: 25px;
     font-weight: bold;
 }
 .nav-item{
-    
     font-size: 20px;
     font-weight: bold;
-    
 }
 .navbar-collapse li a:hover, .navbar-collapse li a.active{
     color: #ba1206 !important;
 }
+        /* header section */
+
+
+
+
+    /* banner section */
 .slider-section .carousel-caption{
     text-align: center;
 }
@@ -69,27 +71,23 @@ header{
     width: 100%;
     height: 100vh;
 }
+/* banner section */
 
 
 
 
-
-
-
-
+/* menu section */
 .menu-lesson-bg{
     text-align: left;
     padding-top: 110px;
     padding-left: 36px;
-    height: 400px;
-    
+    height: 400px;   
 }
 .menu-lesson-bg::after{
     content: "";
     background-image: url(/gym_project/images/menu_bg10.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    
     opacity: .3;
     top: 0;
     left: 0;
@@ -98,23 +96,17 @@ header{
     position: absolute;
     z-index: -1;
 }
-
-
-
-
 .menu-discound-bg{
     text-align: left;
     padding-top: 110px;
     padding-left: 36px;
     height: 400px;
-    
 }
 .menu-discound-bg::after{
     content: "";
     background-image: url(/gym_project/images/menu_bg20.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    
     opacity: .3;
     top: 0;
     left: 0;
@@ -144,9 +136,7 @@ header{
     position: absolute;
     z-index: -1;
 }
-
 .menu-section-title{
-    
     font-size: 2rem;
     color: white;
     font-weight: bold;
@@ -163,8 +153,6 @@ header{
     color: white;
     opacity: .8;
 }
-
-
 .book-now-link{
     text-transform: uppercase;
     color: white;
@@ -172,7 +160,6 @@ header{
     text-decoration: none;
     letter-spacing: 1px;
 }
-
 .book-now-link::after{
     content: "  \f061";
 }
@@ -182,22 +169,23 @@ header{
 .book-now-link:hover{
     text-decoration: none;
     color: #ba1206;
-
 }
+/* menu section */
+
+
+/* about section */
 .about-section{
-    height: 500px;
+    height: 550px;
     background-color:#d7272a;
 }
 .about-desc{
-
-    height: 500px;
-    /* width: 44%; */
+    height: 550px;
     padding-top: 40px;
     padding-left: 45px;
     color: white;
 }
 .about-section img{
-    height: 500px;
+    height: 550px;
     float: right;
     width: 110%;
 }
@@ -220,7 +208,6 @@ header{
     font-weight: bold;
     padding: 15px;
     color: white;
-
 }
 .about-desc a:hover{
     color: #ba1206;
@@ -231,20 +218,23 @@ header{
 .about-desc a::after{
     content: "  \f061";
 }
+/* about section */
+
+
+/* feature section */
 .features-section{
     background-color: #111122;
-    /* height: 400px; */
     text-align: center;
     background-position: center center;
     background-size: cover;
     position: relative;
+    padding-bottom: 90px;
 }
 .features-item{
     color: white;
     padding-top: 125px;
 }
 .features-item .icon{
-
     font-size: 48px;
 }
 .features-title{
@@ -257,17 +247,69 @@ header{
     margin: 0 0 10px;
     font-size: 17px;
 }
+/* feature section */
 
 
-
-
-
-
-@media(min-width:992px){
-    .about-desc a{
-        padding: 0;
-    }
+/* classes section */
+.class-section{
+    background-color: whitesmoke;
 }
+.class-section h2{
+    font-size: 37px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 23px;
+    padding-top: 60px;
+    letter-spacing: 5px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+.card-body {
+    background-color: whitesmoke;
+    padding-left: 0px;
+}
+.card-body a{
+    font-size: 18px;
+    text-transform: uppercase;   
+}
+.card-body a:hover{
+    color: #ba1206;
+    background-color: black;
+    padding: 15px;
+    border-radius: 15px;
+}
+.card-body a::after{
+    content: "  \f061";
+}
+.card {
+    border: none;
+
+}
+.card-body h4{
+    text-transform: uppercase;
+}
+.controls-top{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 30px;
+}
+.controls-top a{
+    color: black !important;
+}
+.controls-top a:hover{
+    color: #ba1206 !important;
+    background-color: black !important;
+    padding-left: 30px;
+    border-radius: 40px;
+}
+/* class section */
+
+
+
+
+
+
+/* Media Queries */
 @media(min-width:768px) and (max-width:992px){
     .about-img{
         display: none;
