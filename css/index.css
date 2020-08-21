@@ -1,11 +1,11 @@
-html,body{overflow-x: hidden;}
+html,body{overflow-x: hidden; height: 100%;}
 
 
 /* Css Reset */
 body{
     padding: 0;
     margin: 0;
-    background-color:black;
+    background-color:#030611;
     font-family: 'Fira Sans', sans-serif;  
 }
 
@@ -82,6 +82,7 @@ header{
     padding-top: 110px;
     padding-left: 36px;
     height: 400px;   
+
 }
 .menu-lesson-bg::after{
     content: "";
@@ -302,18 +303,197 @@ header{
     padding-left: 30px;
     border-radius: 40px;
 }
+.card-img-top{
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+.card-img-top:hover{
+    transform: scale(1.1);
+    border-radius: 15px;
+}
 /* class section */
 
 
 
 
+/* service section */
+.service-main-heading{
+    color: whitesmoke;
+    font-size: 37px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 23px;
+    padding-top: 60px;
+    letter-spacing: 5px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+.service-section{
+    position: relative;
+    width: 100%;
+}
+.service-section .service-box{
+    position: relative;
+    height: 500px;
+    background: #060c21;
+    border: 1px solid #000;
+}
+.service-section .service-box::before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    transform: skew(2deg,2deg);
+    z-index: -1;
+}
+.service-section .service-box:nth-child(1)::before{
+    background:linear-gradient(315deg,#e91e63,#5d02ff);
+}
+.service-section .service-box:nth-child(2)::before{
+    background:linear-gradient(315deg,#ff0057,#e64a19);   
+}
+.service-section .service-box:nth-child(3)::before{
+    background:linear-gradient(315deg,#89ff00,#00bcd4);  
+}
+.service-section .service-box:nth-child(4)::before{
+    background:linear-gradient(315deg,#ff0000,#ffc107);
+}
+.service-section .service-box::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+.service-body{
+    position: relative;
+    padding: 20px;
+    transform: translateY(40px);
+}
+.service-box .service-body h2{
+    position: absolute;
+    top: 60px;
+    right: 70px;
+    margin: 0;
+    padding: 0;
+    font-size: 11em;
+    color: rgba(255, 255, 255, .05);
+    transition: 0.5s;
+}
+.service-box:hover .service-body h2{
+    top: -60px;
+}
+.service-box .service-body h3{
+    position: absolute;
+    top: 150px;
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+.service-box .service-body p{
+    position: absolute;
+    top: 200px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+}
+.service-box .service-body a{
+    position: relative;
+    top: 300px;
+    margin: 20px 0 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    display: inline-block;
+    color: #fff;
+    transition: 0.5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+    text-transform: uppercase;
+}
+.service-box:hover .service-body a{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+.service-box .service-body a:hover{
+    color: #ba1206;
+} 
+.service-section .container-fluid{
+    padding-left: 90px;
+    padding-right: 90px;
+}
+.service-section .service-box .service-body{
+    height: 120px;
+}
+.service-btn .btn-prev{
+    border: 1px solid white;
+    position: absolute;
+    top: 230px;
+    left: 20px;
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+}
+.service-btn .btn-next{
+    border: 1px solid white;
+    position: absolute;
+    top: 230px;
+    right: 20px;
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+}
+.service-btn a:hover{
+    color: #ba1206;
+}
 
 
-/* Media Queries */
-@media(min-width:768px) and (max-width:992px){
-    .about-img{
+
+
+
+
+@media screen and (min-width:992px) and (max-width:1200px){
+.service-box .service-body a{
+        top:313px;
+}
+.service-box .service-body p{
+    top:90px;
+}
+.service-box .service-body h3{
+    top:32px;
+
+}
+.service-box .service-body h2{
+    top:0px;
+    right:0px;
+}
+.service-btn .btn-next{
+    top:295px;
+}
+.service-btn .btn-prev{
+    top:295px;
+}
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+    .about-section img{
         display: none;
     }
+    
 }
 
 
@@ -323,6 +503,14 @@ header{
         padding-top: 100px;
         padding-left: 78px;
     }
+
+.service-btn .btn-prev{
+    top: 325px;
+}
+
+.service-btn .btn-next{
+    top: 325px;
+}
 }
 @media (max-width:576px){
     .menu-lesson-bg {
@@ -337,5 +525,14 @@ header{
     .about-desc{
     padding-top: 20px;
     padding-left: 19px;
+}
+.service-box .service-body a{
+    top: 331px;
+}
+.service-btn .btn-next{
+    top: 335px;
+}
+.service-btn .btn-prev{
+    top: 335px;
 }
 }
