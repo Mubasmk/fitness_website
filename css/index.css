@@ -224,7 +224,7 @@ header{
 
 /* feature section */
 .features-section{
-    background-color: #111122;
+    background-color: #030611;
     text-align: center;
     background-position: center center;
     background-size: cover;
@@ -265,28 +265,28 @@ header{
     letter-spacing: 5px;
     font-family: 'Do Hyeon', sans-serif;
 }
-.card-body {
+.class-body {
     background-color: whitesmoke;
     padding-left: 0px;
 }
-.card-body a{
+.class-body a{
     font-size: 18px;
     text-transform: uppercase;   
 }
-.card-body a:hover{
+.class-body a:hover{
     color: #ba1206;
     background-color: black;
     padding: 15px;
     border-radius: 15px;
 }
-.card-body a::after{
+.class-body a::after{
     content: "  \f061";
 }
-.card {
+.class-box {
     border: none;
 
 }
-.card-body h4{
+.class-body h4{
     text-transform: uppercase;
 }
 .controls-top{
@@ -303,11 +303,11 @@ header{
     padding-left: 30px;
     border-radius: 40px;
 }
-.card-img-top{
+.class-img-top{
     overflow: hidden;
     transition: 0.5s ease-in-out;
 }
-.card-img-top:hover{
+.class-img-top:hover{
     transform: scale(1.1);
     border-radius: 15px;
 }
@@ -462,39 +462,148 @@ header{
 }
 
 
+/* feature2 section */
+.features2-section{
+    background-color: #030611;
+    text-align: center;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 90px;
+}
+.features2-item{
+    color: white;
+    padding-top: 125px;
+}
+.features2-item .icon{
+    font-size: 50px;
+}
+.features2-title{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px;
+}
+.features2-numbers{
+    margin: 0 0 0;
+    font-size: 50px;
+}
+/* feature2 section */
 
 
+
+/* trainers section */
+.trainers-section{
+    background-color: whitesmoke;
+    padding-left: 5rem;
+     padding-right: 5rem;
+    
+     
+}
+.trainers-section h2{
+    color: black;
+    font-size: 37px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 23px;
+    padding-top: 60px;
+    letter-spacing: 5px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+.trainers-box{
+    border-radius: 15px;   
+    background: black;
+    overflow: hidden; 
+    position: relative;
+    z-index: 1;
+}
+.trainers-img-top{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease-in-out;
+    backface-visibility: hidden;
+}    
+.trainers-box:hover .trainers-img-top{
+    opacity: 0.1;
+}
+.trainers-social {
+    width: 100%;
+    height: 100%;
+    transition: .5s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 30% 10% 0;
+  }
+  .trainers-box:hover .trainers-social{
+      opacity: 1;
+  }
+  .trainers-desc {
+    color: whitesmoke;
+    font-size: 20px;
+  }
+.trainers-body{
+    background-color: #060c21;
+    position: relative ;
+    z-index: 2;
+    padding: .8rem;
+    text-align: center;
+}
+.trainers-body h4{
+    color: white;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    position: relative;
+    top: 10px;
+
+}
+.social-icons a{
+    color: whitesmoke;
+    padding: 8px;
+}
+.social-icons a:hover{
+    color: #ba1206;
+}
+/* trainers section */
 
 
 @media screen and (min-width:992px) and (max-width:1200px){
-.service-box .service-body a{
-        top:313px;
-}
-.service-box .service-body p{
-    top:90px;
-}
-.service-box .service-body h3{
-    top:32px;
-
-}
-.service-box .service-body h2{
-    top:0px;
-    right:0px;
-}
-.service-btn .btn-next{
-    top:295px;
-}
-.service-btn .btn-prev{
-    top:295px;
-}
-}
-
-@media screen and (min-width:768px) and (max-width:992px){
-    .about-section img{
-        display: none;
+    .service-box .service-body a{
+            top:313px;
+    }
+    .service-box .service-body p{
+        top:90px;
+    }
+    .service-box .service-body h3{
+        top:32px;
+    
+    }
+    .service-box .service-body h2{
+        top:0px;
+        right:0px;
+    }
+    .service-btn .btn-next{
+        top:295px;
+    }
+    .service-btn .btn-prev{
+        top:295px;
+    }
     }
     
-}
+    @media screen and (min-width:768px) and (max-width:992px){
+        .about-section img{
+            display: none;
+        }
+        
+    }
 
 
 
@@ -512,7 +621,7 @@ header{
     top: 325px;
 }
 }
-@media (max-width:576px){
+@media(min-width:576px){
     .menu-lesson-bg {
         padding-top: 83px;
     }
@@ -535,4 +644,19 @@ header{
 .service-btn .btn-prev{
     top: 335px;
 }
+}
+@media(max-width:576px){
+    .service-box .service-body h2{
+        top: 35px;
+        right: 0;
+        font-size: 6em;
+    }
+    .service-box .service-body h3{
+        top: 86px;
+        font-size: 17px;
+    }
+    .service-box .service-body p{
+        top: 130px;
+        font-size: 10px;
+    }
 }
