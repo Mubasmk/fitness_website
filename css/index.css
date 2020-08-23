@@ -497,6 +497,7 @@ header{
     background-color: whitesmoke;
     padding-left: 5rem;
      padding-right: 5rem;
+     padding-bottom: 100px;
     
      
 }
@@ -575,6 +576,82 @@ header{
 /* trainers section */
 
 
+/* discount section started */
+.discount-section   {
+    background:url(/gym_project/images/hot-discount-bg3.jpg);
+    background-size: cover;
+    height: 620px;
+    background-repeat: no-repeat;
+    background-position:  center top;
+    padding-top: 15px;
+}
+.hot-discount-item{
+    float: left;
+    padding-left: 150px;
+    width: 63%;
+    position: relative;
+    top: 160px;
+}
+.hot-discount-item-title{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+.hot-discount-item-subtitle{
+    font-size:30px;
+    text-transform: uppercase;
+    margin: 0 0 40px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+.hot-discount-item-subtitle a{
+    color: red;
+    text-decoration: none;
+}
+.hot-discount-item-subtitle a:hover{
+    color: #ba1206;
+    
+}
+.hot-discount-item-desc{
+    margin-bottom: 23px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    opacity: .6;
+}
+.discount-item-btn{
+    padding: 15px;
+    font-size: 20px !important;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-style: italic !important;
+    font-weight: bold !important;
+}
+
+.discount-item-btn::after{
+    content: "  \f061";
+}
+.discount-item-btn:hover{
+    text-decoration: none;
+    color: #ba1206;
+    background: black;
+    padding: 15px;
+    border-radius: 15px;
+}
+/* discount section */
+
+
+
+
+
+
+
 @media screen and (min-width:992px) and (max-width:1200px){
     .service-box .service-body a{
             top:313px;
@@ -596,13 +673,22 @@ header{
     .service-btn .btn-prev{
         top:295px;
     }
+    .hot-discount-item{
+        padding-left: 110px;
+    }
     }
     
     @media screen and (min-width:768px) and (max-width:992px){
         .about-section img{
             display: none;
         }
-        
+        .hot-discount-item{
+            width: 76%;
+            padding-left: 40px;
+        }
+        .hot-discount-item-title{
+            font-size: 35px;
+        }
     }
 
 
@@ -620,6 +706,25 @@ header{
 .service-btn .btn-next{
     top: 325px;
 }
+}
+@media screen and (min-width:576px) and (max-width:768px){
+    .hot-discount-item{
+        width: 94%;
+        padding-left: 10px;
+        top: 154px;
+    }
+    .hot-discount-item-title{
+        font-size: 30px;
+    }
+    .hot-discount-item-subtitle{
+        font-size: 22px;
+    }
+    .hot-discount-item-desc{
+        font-size: 16px;
+    }
+    .discount-item-btn{
+        font-size: 13px !important;
+    }
 }
 @media(min-width:576px){
     .menu-lesson-bg {
@@ -658,5 +763,23 @@ header{
     .service-box .service-body p{
         top: 130px;
         font-size: 10px;
+    }
+    .hot-discount-item{
+        padding-left: 10px;
+        width: 100%;
+        top: 190px;
+
+    }
+    .hot-discount-item-title{
+        font-size: 19px;
+    }
+    .hot-discount-item-subtitle{
+        font-size: 17px;
+    }
+    .hot-discount-item-desc{
+        font-size: 13px;
+    }
+    .discount-item-btn{
+        font-size: 12px !important;
     }
 }
