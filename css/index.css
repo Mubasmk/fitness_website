@@ -1,14 +1,15 @@
-html,body{overflow-x: hidden; height: 100%;}
-
-
-/* Css Reset */
+/* css reset */
+html,body{
+    overflow-x: hidden;
+    height: 100%;
+}
 body{
     padding: 0;
     margin: 0;
     background-color:#030611;
     font-family: 'Fira Sans', sans-serif;  
 }
-
+/* css reset */
 
 
 /* header section */
@@ -53,12 +54,12 @@ header{
 .navbar-collapse li a:hover, .navbar-collapse li a.active{
     color: #ba1206 !important;
 }
-        /* header section */
+/* header section */
 
 
 
 
-    /* banner section */
+/* banner section */
 .slider-section .carousel-caption{
     text-align: center;
 }
@@ -330,6 +331,7 @@ header{
 .service-section{
     position: relative;
     width: 100%;
+    height: 650px;
 }
 .service-section .service-box{
     position: relative;
@@ -459,6 +461,7 @@ header{
 .service-btn a:hover{
     color: #ba1206;
 }
+/* service section */
 
 
 /* feature2 section */
@@ -497,8 +500,6 @@ header{
     padding-left: 5rem;
      padding-right: 5rem;
      padding-bottom: 100px;
-    
-     
 }
 .trainers-section h2{
     color: black;
@@ -563,7 +564,6 @@ header{
     font-weight: 500;
     position: relative;
     top: 10px;
-
 }
 .social-icons a{
     color: whitesmoke;
@@ -575,7 +575,7 @@ header{
 /* trainers section */
 
 
-/* discount section started */
+/* discount section  */
 .discount-section   {
     background:url(/gym_project/images/hot-discount-bg3.jpg);
     background-size: cover;
@@ -632,7 +632,6 @@ header{
     font-style: italic !important;
     font-weight: bold !important;
 }
-
 .discount-item-btn::after{
     content: "  \f061";
 }
@@ -646,12 +645,11 @@ header{
 /* discount section */
 
 
-/* quiz-section */
+/* question-section */
 .quiz-section{
     background-color: #d7272a;
     padding-top: 75px;
     padding-bottom: 60px;
-    
 }
 .quiz-section .container-fluid{
     padding-left: 100px;
@@ -670,7 +668,6 @@ header{
     float: left;
     color: whitesmoke;
     font-size: 18px;
-    
 }
 .quiz-btn{
     color: white !important;
@@ -687,17 +684,14 @@ header{
     color: black !important;
     background: whitesmoke;
     text-decoration: none;
-
-
-
 }
+/* question section */
 
-/* classes section */
+
+/* gallery section */
 .gallery-section{
     background-color: #030611;
     padding-top: 100px;
-    
-
 }
 .gallery-section .container-fluid{
     padding-left: 100px;
@@ -715,19 +709,11 @@ header{
     color: whitesmoke;
     position: relative;
     top: -25px;
-    
-/* }
-.gallery-body {
-    background-color: whitesmoke;
-    padding-left: 0px; */
-
 }
 .gallery-box {
     height: 400px;
     border-radius: 50px;
     border: none;
-    
-
 }
 .gallery-img-top{
     height: 400px;
@@ -737,10 +723,7 @@ header{
 }
 .gallery-img-top:hover{
     transform: scale(1.1);
-    
 }
-/* class section */
-
 .gallery-btn .gallery-btn-prev{
     border: 1px solid white;
     position: relative;
@@ -766,16 +749,260 @@ header{
 .gallery-btn a:hover{
     color: #ba1206;
 }
+/* gallery section */
+
+
+/* question2-section */
+.quiz2-section{
+    background-color: #d7272a;
+    padding-top: 75px;
+    padding-bottom: 60px;
+    margin-top: 100px;
+}
+.quiz2-section .container-fluid{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.quiz2-title{
+    float: left;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    margin: 0 0 22px;
+}
+.quiz2-desc{
+    float: left;
+    color: whitesmoke;
+    font-size: 20px;
+}
+.quiz2-btn{
+    color: white !important;
+    border: 1px solid white;
+    font-weight: bold;
+    float: right;
+    margin-top: 10px;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 15px 50px;
+    text-decoration: none;
+}
+.quiz2-btn:hover{
+    color: black !important;
+    background: #030611;
+    text-decoration: none;
+}
+/* question2-section */
+
+
+/* testimonial section */
+.testimonial-section{
+    background-color: #030611 !important;   
+    padding-bottom: 100px;   
+}
+.testimonial-section h2{
+    color: whitesmoke;
+    font-size: 37px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 23px;
+    padding-top: 60px;
+    letter-spacing: 5px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+.testimonial-box{
+    background: #030611;
+    align-items: center;
+}
+.testimonial-img-top{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.testimonial-name{
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    padding: 10px;
+}
+.testimonial-desc{
+    font-size: 15px;
+    color: white;
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: 2;
+}
+.testimonial-btn{
+    opacity: .5;
+}
+.testimonial-btn .testimonial-btn-prev{
+    border: 1px solid white;
+    position: relative;
+    float: left;
+    bottom: 240px;
+    right: 0px;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+}
+.testimonial-btn .testimonial-btn-next{
+    border: 1px solid white;
+    position: relative;
+    float: right;
+    bottom: 240px;
+    left: 0px;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+}
+.testimonial-btn a:hover{
+    color: #ba1206;
+}
+/* testimonial-section */
+
+
+/* contact-section */
+.contact-section{
+    background-image: url(/gym_project/images/contact-bg-5.jpg) ;
+    background-size: 100% 700px;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+.contact-section-layer{
+    background-color: rgba(0,0,19,0.85);
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.contact-section h2{
+    color: whitesmoke;
+    font-size: 37px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 23px;
+    padding-top: 60px;
+    letter-spacing: 5px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+.contact-box input{
+    background: none !important;
+    border: 1px solid #787882;
+    height: 65px;
+    line-height: 50px;
+    margin: 30px !important;
+    color: #fff;
+    border-radius: 15px;
+}
+.contact-box textarea{
+    background: none !important;
+    border: 1px solid #787882;
+    color: #fff;
+    height: 170px;
+    margin: 30px !important;
+    padding: 25px;
+    line-height: 20px;
+    border-radius: 15px;
+}
+.contact-box input:hover{
+    border: 1px solid green;
+}
+.contact-box input:focus{
+    border: 1px solid green;
+    box-shadow: none;
+}
+.contact-box textarea:hover{
+    border: 1px solid green;
+}
+.contact-box textarea:focus{
+    border: 1px solid green;
+    box-shadow: none;
+}
+.contact-box .form-group{
+    width: 100%;
+}
+.contact-box button{
+    font-size: 17px;
+    width: 30%;
+    height: 50px;
+    background: none;
+    border: 1px solid white;
+    color: whitesmoke;
+    opacity: .7;
+    border-radius: 15px;
+    margin: 0 30px;
+}
+.contact-box button:focus{
+    box-shadow: none !important;
+    border: none;
+}
+.contact-box button:hover{
+    color: #ba1206;
+    border: 1px solid green;
+}
+.address-box{
+    font-size: 20px;
+    position: absolute;
+    top: 80px;
+    padding-left: 50px;
+    font-weight: lighter;
+    color: white;
+}
+.address-box a{
+    text-decoration: none;
+    color: white;
+}
+.address-box a:hover{
+    color: #ba1206;
+}
+/* contact section */
+
+/* footer section */
+.page-footer ul i{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 20px;
+}
+.page-footer ul i:hover{
+    color: #ba1206;
+}
+.footer-copyright{
+    font-size: 18px;
+    color: whitesmoke;
+    letter-spacing: 1px;
+}
+.footer-copyright a{
+    text-decoration: none;
+    color: green;
+}
+.footer-copyright a:hover{
+    color: #ba1206;
+}
+/* footer section */
 
 
 
 
 
 
+/* Media Queries */
 
-
-
+/* min-992px to max-1200px */
 @media screen and (min-width:992px) and (max-width:1200px){
+    /* header section */
     .navbar{
         margin-bottom: -10px;
     }
@@ -799,8 +1026,10 @@ header{
     .navbar-collapse form button{
         font-size: 12px;
     }
+
+    /* service section */
     .service-box .service-body a{
-            top:313px;
+        top:313px;
     }
     .service-box .service-body p{
         top:90px;
@@ -819,98 +1048,168 @@ header{
     .service-btn .btn-prev{
         top:295px;
     }
+    
+    /* discount section */
     .hot-discount-item{
         padding-left: 110px;
     }
+
+    /* question1 section */
     .quiz-section .container-fluid {
         padding-left: 50px;
         padding-right: 50px;
     }
     .quiz-title{
         font-size: 28px;
-
     }
     .quiz-btn{
         padding: 10px 20px;
     }
+
+    /* question2 section */
+    .quiz2-section .container-fluid {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .quiz2-title{
+        font-size: 28px;
+    }
+    .quiz2-btn{
+        padding: 10px 20px;
+    }
 }
-    @media screen and (min-width:768px) and (max-width:992px){
-        .about-section img{
-            display: none;
-        }
-        .hot-discount-item{
-            width: 76%;
-            padding-left: 40px;
-        }
-        .hot-discount-item-title{
-            font-size: 35px;
-        }
-        .quiz-section{
-            padding-top: 90px;
-        }
-        .quiz-section .container-fluid{
-            padding-left: 25px;
-            padding-right: 25px;
-        }
-        .quiz-title{
-            font-size: 22px;
-        }
-        .quiz-desc{
-            font-size: 14px;
-        }
-        .quiz-btn{
-            margin-top: 10px;
-            font-size: 14px;
-            padding: 10px 20px;
-        }
+/* min-992px to max-1200px */
+
+
+/* min-768px to max-992px */
+@media screen and (min-width:768px) and (max-width:992px){
+    /* about section */
+    .about-section img{
+        display: none;
     }
 
+    /* discount section */
+    .hot-discount-item{
+        width: 76%;
+        padding-left: 40px;
+    }
+    .hot-discount-item-title{
+        font-size: 35px;
+    }
+
+    /* question1-section */
+    .quiz-section{
+        padding-top: 90px;
+    }
+    .quiz-section .container-fluid{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .quiz-title{
+        font-size: 22px;
+    }
+    .quiz-desc{
+        font-size: 14px;
+    }
+    .quiz-btn{
+        margin-top: 10px;
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    /* question2 section */
+    .quiz2-section{
+        padding-top: 90px;
+    }
+    .quiz2-section .container-fluid{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .quiz2-title{
+        font-size: 22px;
+    }
+    .quiz2-desc{
+        font-size: 14px;
+    }
+    .quiz2-btn{
+        margin-top: 10px;
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    /* contact section */
+    .address-box{
+        padding-left: 0;
+    }
+
+}
+/* min-768px to max-992px */
 
 
+/* max-768px */
 @media(max-width:768px){
+    /* about section */
     .about-desc{
         padding-top: 100px;
         padding-left: 78px;
     }
 
-.service-btn .btn-prev{
-    top: 325px;
+    /* service section */
+    .service-btn .btn-prev{
+        top: 325px;
+    }
+
+    .service-btn .btn-next{
+        top: 325px;
+    }
+
+    /* question1 section */
+    .quiz-section .container-fluid{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .quiz-title{
+        font-size: 27px;
+    }
+    .quiz-desc{
+        font-size: 16px;
+    }
+    .quiz-btn{
+        float: none;
+        font-size: 17px;
+        padding: 8px 20px;
+    }
+    
+    /* question2 section */
+    .quiz2-section .container-fluid{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .quiz2-title{
+        font-size: 27px;
+    }
+    .quiz2-desc{
+        font-size: 16px;
+    }
+    .quiz2-btn{
+        float: none;
+        font-size: 17px;
+        padding: 8px 20px;
+    }
+
+    /* testimonial section */
+    .testimonial-btn .testimonial-btn-prev{
+        font-size: 10px;
+    }
+    .testimonial-btn .testimonial-btn-next{
+        font-size: 10px;
+    }
 }
-
-.service-btn .btn-next{
-    top: 325px;
-}
-.quiz-section .container-fluid{
-    padding-left: 50px;
-    padding-right: 50px;
-}
-.quiz-title{
-    font-size: 27px;
-}
-.quiz-desc{
-    font-size: 16px;
-}
-.quiz-btn{
-    float: none;
-    font-size: 17px;
-    padding: 8px 20px;
-}
+/* max-768px */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-}
+/* min-576px to max-768px */
 @media screen and (min-width:576px) and (max-width:768px){
+    /* discount section */
     .hot-discount-item{
         width: 94%;
         padding-left: 10px;
@@ -928,8 +1227,54 @@ header{
     .discount-item-btn{
         font-size: 13px !important;
     }
+
+    /* contact section */
+    .contact-section{
+        background: none;
+    }
+    .contact-box{
+        width: 70%;
+        margin-left: 60px;
+    }
+    .contact-box input{
+        height: 50px;
+        margin: 15px;
+    }
+    .contact-box textarea{
+        margin: 15px;
+        height: 120px;
+    }
+    .contact-box button{
+        font-size: 13px;
+        height: 38px;
+        margin: 0 30px;
+    }
+    .contact-box h2{
+        font-size: 30px;
+    }
+    .address-box{
+        top: 25px;
+        font-size: 18px;
+        padding-left: 92px;
+    }
+
+    /* footer section */
+    .page-footer ul i{
+        margin-top: 100px;
+        font-size: 15px;
+        letter-spacing: 5px;
+    }
+    .footer-copyright{
+        font-size: 15px;
+        margin-top: -23px;
+    }
 }
+/* min-576px to max-768px */
+
+
+/* min-576px */
 @media(min-width:576px){
+    /* menu section */
     .menu-lesson-bg {
         padding-top: 83px;
     }
@@ -939,40 +1284,54 @@ header{
     .menu-testing-bg{
         padding-top: 83px;
     }
+
+    /* about section */
     .about-desc{
-    padding-top: 20px;
-    padding-left: 19px;
+        padding-top: 20px;
+        padding-left: 19px;
+    }
+
+    /* service section */
+    .service-box .service-body a{
+        top: 331px;
+    }
+    .service-btn .btn-next{
+        top: 335px;
+    }
+    .service-btn .btn-prev{
+        top: 335px;
+    }
 }
-.service-box .service-body a{
-    top: 331px;
-}
-.service-btn .btn-next{
-    top: 335px;
-}
-.service-btn .btn-prev{
-    top: 335px;
-}
-}
+/* min-576px */
+
+
+/* max-576px */
 @media(max-width:576px){
+    /* header section */
     .navbar-brand{
-        font-size: 20px;
-}
+        font-size: 15px;
+    }
+    .navbar-brand span{
+        font-size: 17px;
+    }
     .navbar img{
-        width: 75px;
-        height: 75px;
+        width: 50px;
+        height: 50px;
     }
     .nav-item{
-        font-size: 16px;
+        font-size: 14px;
     }
     .navbar-collapse form input{
         font-size: 10px;
     }
-    .navbar-collapse form button{
+    .navbar-collapse form button{   
         margin-left: 5px;
     }
     .form-control{
         width: 50%;
     }
+
+    /* service section */
     .service-box .service-body h2{
         top: 35px;
         right: 0;
@@ -986,11 +1345,12 @@ header{
         top: 130px;
         font-size: 10px;
     }
+    
+    /* discount section */
     .hot-discount-item{
         padding-left: 10px;
         width: 100%;
         top: 190px;
-
     }
     .hot-discount-item-title{
         font-size: 19px;
@@ -1005,4 +1365,120 @@ header{
         font-size: 12px !important;
     }
 
+    /* contact section */
+    .contact-section{
+        background: none;
+    }
+    .contact-section h2{
+        font-size: 25px;
+    }
+    .contact-box{
+        width: 150%;
+        position: relative;
+        left: 22px;
+        top: -22px;
+    }
+    .contact-box input{
+        height: 50px;
+        margin: 15px !important;
+    }
+    .contact-box textarea{
+        height: 100px;
+        margin: 15px !important;
+    }
+    .contact-box button{
+        margin: 0 15px !important;
+        height: 33px;
+        width: 25%;
+        font-size: 14px;
+        border-radius: 7px;
+    }
+    .address-box{
+        font-size: 16px;
+        top: 10px;
+        padding-left: 37px;
+    }
+
+    /* about section */
+    .about-desc{
+        padding-left: 31px;
+        padding-top: 38px;
+    }
+    .about-section{
+        height: 520px;
+    }
+    .about-desc a{
+        font-size: 11px;
+        padding: 10px;
+    }
+
+    /* service section */
+    .controls-top{
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+    .service-section .container-fluid{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .service-main-heading{
+        font-size: 25px;
+    }
+    .service-section .service-box{
+        height: 375px;
+    }
+    .service-box .service-body a{
+        top: 220px;
+        margin: 20 0 0;
+        padding: 8px 0;
+    }
+    .service-btn .btn-prev{
+        left: 7px;
+        font-size: 10px;
+        border-radius: 7px;
+    }
+    .service-btn .btn-next{
+        right: 7px;
+        font-size: 10px;
+        border-radius: 7px;
+    }
+
+    /* trainers section */
+    .trainers-section{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    /* gallery section */
+    .gallery-section .container-fluid{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .gallery-section h2{
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+    .gallery-btn .gallery-btn-prev{
+        right: 45px;
+        font-size: 10px;
+        border-radius: 7px;
+    }
+    .gallery-btn .gallery-btn-next{
+        left: 45px;
+        font-size: 10px;
+        border-radius: 7px;
+    }
+
+    /* footer section */
+    .page-footer ul i{
+        font-size: 15px;
+        letter-spacing: 5px;
+    }
+    .footer-copyright{
+        font-size: 12px;
+        margin-top: -23px;
+    }
 }
+/* max-576px */
+
+/* Media Queries */
